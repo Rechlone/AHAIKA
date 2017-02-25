@@ -1,0 +1,363 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@font-face {
+    font-family: Constantia;
+    src: url(../fonts/Constantia.ttf);
+}
+
+/*Font para textos gerais*/
+@font-face {
+    font-family: Spiegel;
+    src: url(../fonts/Spiegel.ttf);
+}
+
+/*Font para menus*/
+@font-face {
+    font-family: Beaufort;
+    src: url(../fonts/Beaufort.ttf)
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding: 0;
+        }
+    }
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 44px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+    /* duas colunas */
+    @media (min-width: 480px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* tres colunas */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /* sidebar */
+    @media (min-width: 992px) {
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
+        }
+    }
+
+
+/* USAR APENAS PARA DEMOSTRAÇÂO */
+.teste {
+    background: #f5d5fe;
+    padding: 5px;
+    text-align: center;
+    margin: 2px 0;
+    color: #fff;
+}
+.big {
+    height: 50px;
+}
+
+.top-bar {
+    background-color: #121212;
+    width: 100%;
+}
+.nav-bar {
+    background-color: #121212;
+    float: left;
+    padding: 18px;
+}
+
+.nav-bar a {
+    font-family: 'Beaufort', Arial, Helvetica, sans-serif;
+    color: #C7A96D;
+    text-decoration: none;
+}
+
+.nav-bar li {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+.nav-bar a:hover {
+    color: #F1C47C;
+}
+
+.nav-bar ul {
+    display: block;
+}
+
+.login-bar{
+    padding: 13px;
+    display: block;
+    float: right;
+}
+.login-bar .error {
+    margin-top: 3px;
+    color: #cccc00;
+    font-size: 13px;
+    display: block;
+    float: left;
+    padding: 5px;
+}
+.login-bar .login-input {
+    font-family: 'Beaufort', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #D8D0BF;
+    background-color: #1E2328;
+    padding: 8px;
+    box-shadow: none;
+    display: inline-block;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.5s;
+}
+
+.login-bar .submit-input {
+    font-family: 'Beaufort', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #CDFAFA;
+    border: none;
+    background-color: #373734;
+    padding: 8px;
+    box-shadow: none;
+    display: inline-block;
+    box-shadow: none;
+    border-radius: 0;
+    transition: background-color 0.5s;
+}
+
+.login-bar .submit-input:hover {
+    background-color: #CAB085;
+    cursor: pointer;
+    
+}
+.login-bar .login-input:focus  {
+    color: #DDA84C;
+    background-color: yellow;
+}
+
+.login-bar label {
+    font-size: 15px;
+    font-family: 'Beaufort', Arial, Helvetica, sans-serif;   
+    float: right;
+    color: #DDA84C;
+    padding: 5px;
+    display: block;
+}
+.login-bar a {
+    text-decoration: none;
+    color: #1E90FF;
+}
+.login-bar a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    background-color: #121212;
+}
+
+body {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin-left: 15px;
+    font-family: 'Constantia', Arial, Helvetica, sans-serif;
+    color: #CAB085;
+    font-size: 58px;
+    text-align: center;
+    display: block;
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.post {
+    display: block;
+    border: solid 1px #0D2E35;
+    background-color: #03232A;
+    clear: both;
+    height: 60px;
+    margin-bottom: -1px;
+}
+.post:hover {
+    cursor: pointer;
+    background-color: #0D2E35;
+}
+.post:focus {
+    background-color: #0D2E35;
+}
+
+.itens {
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.itens li {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.description {
+    list-style: none;
+    float: left;
+    text-align: justify;
+    font-size: 14px;
+    display: inline-block;
+    font-family: 'Spiegel', Arial, Helvetica, sans-serif;   
+    color: #BDB599;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*padding: 18px;*/
+}
+.controls {
+    padding: 8px;
+    display: block;
+    opacity: 0.5;
+}
+
+.controls:hover {
+    opacity: 1;
+}
+
+.user_description {
+    padding-top: 2px;
+    font-family: 'Spiegel', Arial, Helvetica, sans-serif;   
+    color: #0F5666;
+    display: block;
+    float: left;
+    height: 15px;
+    font-size: 13px;
+    float: left;
+}
+
+.user_description a {
+    text-decoration: none;
+    color: #94724D;
+}
+
+.user_description a:hover {
+    text-decoration: underline;
+}
+
+.post_stats {
+    font-family: 'Spiegel', Arial, Helvetica, sans-serif; 
+    list-style:none;
+    color: #BDB599;
+    text-align: center;
+    display: block;
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.post_stats li {
+    margin-left: 10px;
+    text-align: center;
+    float: right;
+}
+.post img {
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+.post .nation_icon {
+    margin-left: 8px;
+    float: right;
+}
+
+.post_stats span {
+    display: block;
+    text-align: center;
+    color: #0F5666;;
+    font-size: 12px;
+}
+
+.show-more {
+    font-family: 'Constantia', Arial, Helvetica, sans-serif; 
+}
+
+.show-more a {
+    color: #BDB599;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: #01151C;
+    border: 1px solid #195657;
+    margin-top: 5px;
+    width: 1170px;
+    padding-top: 20px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.show-more a:hover {
+    text-decoration: underline;
+    background-color: #032d3c;
+}
+
+.not-found
+{
+    color: red;
+    text-align: center;
+    font-family: 'Constantia', Arial, Helvetica, sans-serif; 
+}

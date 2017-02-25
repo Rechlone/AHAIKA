@@ -1,0 +1,156 @@
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+    margin: 0;
+    padding: 0;
+    font-family: Futura;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/FuturaEF.otf);
+}
+
+body {
+    background-color: #0f0f0f;
+    margin-top: 1.000em;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    height: 7.813em;
+    width: 62.000em;
+}
+
+header ul {
+    width: 540px;
+    z-index: 999999;
+    display: block;
+    margin-left: 100px;
+    list-style: none;
+}
+
+header li {
+    z-index: 99999;
+    display: block;
+    text-shadow: 1px 2px #000;
+    margin-left: 5px;
+    margin-top: 15px;
+    color: #996019;
+    font-size: 23px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+header li:hover {
+    color: #bc7824;
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+.navigation {
+    z-index: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3.500em;
+    vertical-align: ;
+    background: url(../images/interface/navbar.png) no-repeat;
+}
+
+.logo {
+    margin-left: 8px;
+    position: absolute;
+    z-index: 2;
+}
+
+#video {
+    width: 71.800em;
+    margin-top: 8px;
+    border: 2px solid #311F11;
+    margin-left: -8%;
+    z-index: 0;
+    display: block;
+}
+
+.container {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background-color: #0f0f0f;
+    width: 61.800em;
+    border: 2px solid #311F11;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 340px;
+    margin-bottom: 8px;
+    border-bottom: none;
+}
+
+.post {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    border-bottom: 2px solid #311F11;
+
+}
+
+.post:hover {
+    background-color: #161616;
+    cursor: pointer;
+}
+.post .imgs {
+    float: left;
+    display: block;
+}
+
+.post .text {
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 8px;
+    color: #687409;
+    display: block;
+    float: left;
+}
+
+.post .text-data {
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-left: 9px;
+    color: #A69C65;
+    display: block;
+    float: left;
+}
+
+.post .text-data a {
+    color: #678CB4;
+    text-decoration: none;
+}
+
+.post .text-data a:hover {
+    text-decoration: underline;
+}
+
+.post-stats {
+    color: #A69C65;
+}
+
+.post-stats ul{
+    text-transform: capitalize;
+    padding: 0;
+    margin-left: 16px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    float: right;
+    margin-top: 2px;
+    list-style: none;
+}
